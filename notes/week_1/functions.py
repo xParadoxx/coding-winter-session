@@ -48,6 +48,7 @@ that x is called the parameter / argument of the function --> it's anything you 
 
 f(2) = 2 * 2 + 4 = 8
 f(-5) = 2 * (-5) + 4 = -6
+my_variable = f(2) # my_variable holds the value of 8
 
 ex 2:
 f(x, y) = 3x - 7y + xy // a multivariable function that defines a surface (non-convex)
