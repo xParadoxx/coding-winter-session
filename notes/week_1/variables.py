@@ -109,3 +109,15 @@ z += x + y
 
 print(z)
 
+"""
+NOTE: some operators to care for:
+
++   --> addition
+-
+*
+/   --> floating point division
+//  --> integer division
+%   --> modulo arithmetic: 9 % 4 --> 9mod4 --> 9 / 4 but you want the remainder: 1
+  
+"""
+

@@ -129,3 +129,13 @@ recall:
 how do we return something: using the return keyword
 """
 
+
+"""
+NOTE:
+to specify the cutoff point for digits, you can use :.4f in your format strings
+"""
+
+cost = 85.898765
+# print(f"your cost is ${cost}")
+# print("your cost is $%.2f" % cost)
+print(f"your cost is ${cost:.2f}")
