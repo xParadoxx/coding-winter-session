@@ -18,3 +18,31 @@ Tax on this item is 0.21 ; total price: 3.21
 Enter another price? (yes or no): no
 
 """
+
+SALES_TAX = 0.07
+
+
+def get_item_and_price():
+    item = input("what did you buy? ")
+    price = float(input("how much was it? $"))
+    return item, price
+
+
+def calc_tax_and_total(price):
+    tax = price * SALES_TAX
+    total = price + tax
+    return tax, total
+
+
+def main():
+    response = input("wanna do checkout? [yes or no] ")
+    while response == "yes":
+        item, price = get_item_and_price()
+        tax, total = calc_tax_and_total(price)
+        print(f"for item: {item} \n\t--> tax: ${tax:.2f}\n\t--> total: ${total:.2f}")
+        response = input("enter another item and price? [yes or no] ")
+
+    print("okay have a nice day!!!")
+
+
+main()

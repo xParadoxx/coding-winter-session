@@ -17,3 +17,32 @@ Assignment #2: 80
 Student #2 earned a 85
 
 """
+
+
+def get_num_students_and_assignments():
+    num_students = int(input("how many students are in the class? "))
+    num_assignments = int(input("how many assignments are in the class? "))
+    return num_students, num_assignments
+
+
+def calc_grades(num_students, num_assignments):
+    for stud in range(num_students):
+        print(f"\nstudent #{stud + 1}")
+
+        sum_grade = 0
+        for a in range(num_assignments):
+            grade = int(input(f"\tassignment #{a + 1}: "))
+            sum_grade += grade
+
+        avg = sum_grade / num_assignments
+        print(f"student #{stud + 1} earned a {avg:.2f}")
+
+    return
+
+
+def main():
+    num_students, num_assignments = get_num_students_and_assignments()
+    calc_grades(num_students, num_assignments)
+
+
+main()
